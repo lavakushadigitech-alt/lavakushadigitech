@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>    
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="section_container videopart_container">
+        <div class="header_nav">
+        <a href="index.html"><img src="/Assets/whitelogolkd.png" alt=""></a>
+        <h2> ~ CANDID TRACKS ~ </h2>
+        <a href="index.html" class="home"><i class='bx bx-home'></i></a>
+        </div>
+        <!-- <h2 class="video_header">~ CANDID TRACKS ~</h2>  -->
+        <div class="videopart_grid">
+            <div class="video_card">
+                <h4>Mr.   &    Mis</h4>
+                <div class="videocontent">
+                    <img class="imgThumb" src="Assets/Veedeos/candidvideo01.jpg" alt="portfolio">
+                    <img class="video_play_icon" src="Assets/Veedeos/play.png" alt="portfolio"
+                     onclick="playVideo('Assets/Veedeos/vid01.MOV')">
+                </div>
+                <!-- <div class="video_content">
+                    <button class="btn" onclick="window.location.href=''">MORE STORIES</button>
+                </div> -->
+            </div>
+            <div class="video_card">
+                <h4>Mr.   &    Mis</h4>
+                <div class="videocontent">
+                    <img class="imgThumb" src="Assets/Veedeos/candidvideo02.jpg" alt="portfolio">
+                    <img class="video_play_icon" src="Assets/Veedeos/play.png" alt="portfolio"
+                     onclick="playVideo('Assets/Veedeos/00000.mp4')">
+                </div>
+                <!-- <div class="video_content">
+                    <button class="btn" onclick="window.location.href=''">MORE STORIES</button>
+                </div> -->
+            </div>
+            <div class="video_card">
+                <h4>Mr.   &    Mis</h4>
+                <div class="videocontent">
+                    <img class="imgThumb" src="Assets/Veedeos/candidvideo03.jpg" alt="portfolio">
+                    <img class="video_play_icon" src="Assets/Veedeos/play.png" alt="portfolio"
+                     onclick="playVideo('Assets/Veedeos/00000.mp4')">
+                </div>
+                <!-- <div class="video_content">
+                    <button class="btn" onclick="window.location.href=''">MORE STORIES</button>
+                </div> -->
+            </div>
+        </div> 
+    </div>
+
+         <div class="video_player" id="videoPlayer">
+            <video width="100%" height="100%" controls muted autoplay id="myVideo">
+                <source src="/Assets/Veedeos/00000.mp4" type="video/mp4/MOV/MTS">
+            </video>
+            <img width="35px" height="35px" src="Assets/Veedeos/close.png"
+             class="close-btn" onclick="stopVideo()">
+        </div>
+
+    <script src="videscript.js"></script>
+
+</body>
+</html>
